@@ -7,10 +7,11 @@ URL: https://leetcode.com/problems/two-sum/
 from typing import List
 
 
+# noinspection PyMethodMayBeStatic
 class Solution:
     """Solution"""
 
-    def two_sum(self, nums: List[int], target: int) -> List[int]:  # noqa
+    def two_sum(self, nums: List[int], target: int) -> List[int]:
         """
 
         :param nums:
