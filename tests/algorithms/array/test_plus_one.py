@@ -2,6 +2,7 @@
 Test cases for plus_one.py
 """
 import pytest
+from copy import deepcopy
 
 from problems.algorithms.array.plus_one import Solution
 
@@ -17,7 +18,7 @@ ARG_VALUES = [
 
 @pytest.mark.parametrize(
     argnames=ARG_NAMES,
-    argvalues=ARG_VALUES
+    argvalues=deepcopy(ARG_VALUES)
 )
 def test_plus_one_by_forloop(digits, expected):
     sol = Solution()
@@ -26,7 +27,7 @@ def test_plus_one_by_forloop(digits, expected):
 
 @pytest.mark.parametrize(
     argnames=ARG_NAMES,
-    argvalues=ARG_VALUES
+    argvalues=deepcopy(ARG_VALUES)
 )
 def test_plus_one_by_recursion(digits, expected):
     sol = Solution()

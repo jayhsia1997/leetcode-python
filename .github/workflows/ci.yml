@@ -25,10 +25,10 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
+          export POETRY_VERSION=1.4.2
           python -m pip install --upgrade pip
-          pip install poetry==1.4.2
+          pip install poetry==$POETRY_VERSION
           poetry install
       - name: Test with pytest
         run: |
-          poetry shell
-          pytest
+          poetry run pytest
