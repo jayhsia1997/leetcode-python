@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "leetcode"
+name = "leetcode-python"
 version = "0.1.0"
 description = ""
 authors = ["Jay Hsia <jayhsia1997@gamil.com>"]
