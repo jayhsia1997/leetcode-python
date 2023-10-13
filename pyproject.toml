@@ -6,10 +6,10 @@ authors = ["Jay Hsia <jayhsia1997@gamil.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.3.1"
+pytest = "*"
 
 [build-system]
 requires = ["poetry-core"]
